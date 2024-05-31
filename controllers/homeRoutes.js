@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
 
 
 //http://localhost:3001/Post/5
-
+//all post should be lowercase
 router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
