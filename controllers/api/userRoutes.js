@@ -4,6 +4,7 @@ const { User } = require('../../models');
 
 //http://localhost:3001/api/users/
 router.post('/', async (req, res) => {
+  console.log("signup")
   try {
     const userData = await User.create(req.body);
 
@@ -19,6 +20,7 @@ router.post('/', async (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
+  console.log("user routes login")
   try {
     const userData = await User.findOne({ where: { username: req.body.username } });
 
