@@ -32,7 +32,10 @@ const signupFormHandler = async (event) => {
   if (username &&  password) {
     const response = await fetch('/api/users/', {
       method: 'POST',
-      body: JSON.stringify({ username,  password }),
+      body: JSON.stringify({ 
+        username: username,  
+        password: username,  
+      }),
       headers: { 'Content-Type': 'application/json' },
     });
 
