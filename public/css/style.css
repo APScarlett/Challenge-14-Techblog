@@ -30,20 +30,9 @@ body {
   font-weight: bold;
   margin-left: -5px;
 }
-a:hover,
-.btn-no-style:hover {
-    color: #e2edd5;
+
+.post {
+  margin-bottom: 2%;
+  line-height: 100%;
+  border: 3px solid snow;
 }
-
-button {
-  background-color: whitesmoke;
-  border: 0;
-  padding: 1%;
-  color: white;
-  font-weight: bold;
-  transition: background-color .1s;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-
